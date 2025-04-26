@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import { LoginForm } from "./loginForm";
 import { Button } from "flowbite-react";
 
@@ -14,7 +15,9 @@ export default function HeroSection() {
           Meet cool WEB3 projects and connect with <br />
           other crypto enthusiasts!
         </p>
-        <Button color="blue">REGISTER NOW</Button>
+        <NavLink to="/Registration">
+          <Button color="blue">REGISTER NOW</Button>
+        </NavLink>
       </div>
 
       {/* Right Half */}

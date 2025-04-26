@@ -3,37 +3,39 @@ import {
   Navbar,
   NavbarBrand,
   NavbarCollapse,
-  NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
+import { NavLink } from "react-router";
 
 export function NavBar() {
   return (
-    <Navbar fluid rounded className="bg-black">
-      <NavbarBrand href="https://flowbite-react.com">
+    <Navbar fluid rounded className="bg-black position-sticky">
+      <NavbarBrand to="https://flowbite-react.com">
         <img
-          src="./src/assets/images/XV-Logo.png"
+          src="../public/images/XV-Logo.png"
           className="mr-3 h-6 sm:h-9"
           alt="Web XV Logo"
         />
       </NavbarBrand>
       <div className="flex md:order-2">
-        <Button className="hidden md:block">Register</Button>
+        <NavLink to="/Registration">
+          <Button className="hidden md:block">Register</Button>
+        </NavLink>
         <NavbarToggle />
       </div>
       <NavbarCollapse className="">
-        <NavbarLink className="text-white " href="#">
+        <NavLink className="text-white " to="/">
           Web XV
-        </NavbarLink>
-        <NavbarLink className="text-white" href="#">
+        </NavLink>
+        <NavLink className="text-white" to="/AllProjects">
           All Projects
-        </NavbarLink>
-        <NavbarLink className="text-white" href="#">
+        </NavLink>
+        <NavLink className="text-white" to="/Community">
           Community
-        </NavbarLink>
-        <NavbarLink className="text-white" href="#">
+        </NavLink>
+        <NavLink className="text-white" to="/AboutUs">
           About Us
-        </NavbarLink>
+        </NavLink>
         <Button className="md:hidden">Register</Button>
       </NavbarCollapse>
     </Navbar>

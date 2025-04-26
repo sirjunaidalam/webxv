@@ -80,7 +80,7 @@ export default function TopCryptoChart() {
               </div>
             </div>
             <div>
-              <img src="../src/assets/images/Graph.png" alt="No Graph Found" />
+              <img src="../public/images/Graph.png" alt="No Graph Found" />
             </div>
           </div>
         ))}

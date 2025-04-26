@@ -1,11 +1,11 @@
 const partners = [
-  { src: "./src/assets/images/Uniramp.png", alt: "Uniramp" },
-  { src: "./src/assets/images/PinkSale.png", alt: "PinkSale" },
-  { src: "./src/assets/images/Uniswap.png", alt: "Uniswap" },
-  { src: "./src/assets/images/CoinGeko.png", alt: "CoinGecko" },
-  { src: "./src/assets/images/PancakeSwap.png", alt: "PancakeSwap" },
-  { src: "./src/assets/images/DexView.png", alt: "DexView" },
-  { src: "./src/assets/images/CoinMarketCap.png", alt: "CoinMarketCap" },
+  { src: "../public/images/Uniramp.png", alt: "Uniramp" },
+  { src: "../public/images/PinkSale.png", alt: "PinkSale" },
+  { src: "../public/images/Uniswap.png", alt: "Uniswap" },
+  { src: "../public/images/CoinGeko.png", alt: "CoinGecko" },
+  { src: "../public/images/PancakeSwap.png", alt: "PancakeSwap" },
+  { src: "../public/images/DexView.png", alt: "DexView" },
+  { src: "../public/images/CoinMarketCap.png", alt: "CoinMarketCap" },
 ];
 
 export default function OurPartner() {

@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "flowbite-react";
+import { NavLink } from "react-router";
 const XvTokenBanner = () => {
   return (
     <div className="w-full max-w-4xl mx-auto my-8 p-8 rounded-xl text-center shadow-lg">
@@ -15,7 +16,9 @@ const XvTokenBanner = () => {
           gotten bigger than ever before and is now fully community-oriented.
         </p>
         <div className="flex justify-center">
-          <Button className="">REGISTER NOW</Button>
+          <NavLink to="/Registration">
+            <Button>REGISTER NOW</Button>
+          </NavLink>
         </div>
       </div>
     </div>

@@ -1,22 +1,30 @@
 import "./App.css";
-import HeroSection from "./component/heroSection";
 import { NavBar } from "./component/navbar";
-import OurPartner from "./component/ourPartner";
+import Home from "./component/home";
+import { FooterFlowbite } from "./component/footer-flowbite";
+import { Route, Routes } from "react-router";
+import AllProjects from "./component/allProjects";
 import AboutUs from "./component/aboutUs";
-import TopCryptoChart from "./component/cryptoCurrencies";
-import XvTokenBanner from "./component/xvTokenBanner";
-import Footer from "./component/footer";
+import TermsNConditions from "./component/termAndConditions";
+import PrivacyPolicy from "./component/privacyPolicy";
+import Community from "./component/Community";
+import Registration from "./component/registrationPage";
 
 function App() {
   return (
     <>
       <NavBar />
-      <HeroSection />
-      <OurPartner />
-      <AboutUs />
-      <TopCryptoChart />
-      <XvTokenBanner />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/AllProjects" element={<AllProjects />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/Community" element={<Community />} />
+        <Route path="/Registration" element={<Registration />} />
+        <Route path="/TermsNConditions" element={<TermsNConditions />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/Login" element={<Community />} />
+      </Routes>
+      <FooterFlowbite />
     </>
   );
 }

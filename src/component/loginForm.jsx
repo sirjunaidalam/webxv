@@ -1,8 +1,8 @@
-import { Button, Checkbox, Label, TextInput } from "flowbite-react";
+import { Button, TextInput } from "flowbite-react";
 
 export function LoginForm() {
   return (
-    <form className="flex max-w-md flex-col gap-4">
+    <form className="flex max-w-md flex-col gap-4 ">
       <div>
         <TextInput
           id="email1"
